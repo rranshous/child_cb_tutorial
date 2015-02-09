@@ -1,0 +1,18 @@
+<h1>What jobs await you?</h1>
+<h2>as a <%= @job_data[:job] %> 
+    in <%= @job_data[:location] %></h2>
+
+<% @job_data[:job_results].each do |job| %>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        <%= job.title %>
+      </h3>
+    </div>
+    <div class="panel-body">
+      Where: <%= job.location %>
+      <br/>
+      Company: <%= job.company_name %>
+    </div>
+  </div>
+<% end %>

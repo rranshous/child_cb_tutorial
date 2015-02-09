@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+img.thumbnail-mid {
+  max-width: 200px;
+  max-height: 200px;
+}

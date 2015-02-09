@@ -1,0 +1,22 @@
+<h1>Where would you like to live?</h1>
+
+<h3>New York City</h3>
+<%= link_to(
+      image_tag('new_york.jpg', class: 'thumbnail-mid'),
+      possible_jobs_path(job: @job, location: 'new_york')
+    )
+%>
+
+<h3>Atlanta</h3>
+<%= link_to(
+      image_tag('atlanta.jpg', class: 'thumbnail-mid'),
+      possible_jobs_path(job: @job, location: 'atlanta')
+    )
+%>
+
+<h3>Palm Bay</h3>
+<%= link_to(
+      image_tag('palm_bay.jpg', class: 'thumbnail-mid'),
+      possible_jobs_path(job: @job, location: 'palm_bay')
+    )
+%>
