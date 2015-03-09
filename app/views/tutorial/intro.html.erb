@@ -5,3 +5,8 @@ Ever wonder how adults figure out what career they are going to persue?
 Lets take a tour of finding a job on the internet!
 
 <%= link_to('Continue', job_options_path) %>
+
+<hr/>
+<% ENV.each do |k, v| %>
+  <p><%= k %> == <%= v %></p>
+<% end %>
