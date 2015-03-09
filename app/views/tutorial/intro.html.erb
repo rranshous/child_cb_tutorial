@@ -7,6 +7,8 @@ Lets take a tour of finding a job on the internet!
 <%= link_to('Continue', job_options_path) %>
 
 <hr/>
-<% ENV.each do |k, v| %>
-  <p><%= k %> == <%= v %></p>
+<% if ENV['SUPER_DEBUG'] %>
+  <% ENV.each do |k, v| %>
+    <p><%= k %> == <%= v %></p>
+  <% end %>
 <% end %>
