@@ -1,6 +1,11 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+  Cb.configure do |config|
+    config.dev_key    = 'WDHV3ZT6Y6HFN3QS2LSG'
+    config.time_out   = 5
+  end
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 

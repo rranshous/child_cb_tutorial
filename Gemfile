@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'cb-api'
+gem 'cb-api', require: 'cb'
 gem 'pry', group: :development
 gem 'rails_12factor', group: :production
 

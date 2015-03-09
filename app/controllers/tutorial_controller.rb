@@ -1,4 +1,3 @@
-require 'cb'
 class TutorialController < ApplicationController
   def index
     redirect_to :intro
@@ -25,7 +24,6 @@ class TutorialController < ApplicationController
   # once they choose where we give them the results
   # to explore, not sure how to make this interesting yet
   def possible_jobs
-    
     Cb.configure do |config|
       config.dev_key    = 'WDHV3ZT6Y6HFN3QS2LSG'
       config.time_out   = 5
@@ -42,8 +40,5 @@ class TutorialController < ApplicationController
       location: location,
       job_results: jobs
     }
-    
   end
-
-
 end
