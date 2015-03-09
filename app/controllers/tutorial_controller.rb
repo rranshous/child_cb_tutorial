@@ -24,10 +24,7 @@ class TutorialController < ApplicationController
   # once they choose where we give them the results
   # to explore, not sure how to make this interesting yet
   def possible_jobs
-    Cb.configure do |config|
-      config.dev_key    = 'WDHV3ZT6Y6HFN3QS2LSG'
-      config.time_out   = 5
-    end
+    
 
     job = params[:job].titleize
     location = params[:location].titleize
